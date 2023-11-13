@@ -63,7 +63,7 @@ class AccountDetails {
     }
 }
 
- class BankingApp {
+public class BankingApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
