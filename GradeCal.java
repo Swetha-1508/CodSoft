@@ -1,6 +1,6 @@
 import java.util.*;
 
-class GradeCal {
+public class GradeCal {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the total number of subjects");
