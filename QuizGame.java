@@ -86,7 +86,7 @@ public class QuizGame {
         scanner.close();
     }
 
-    // Function to display a question and its options
+    
     public static void displayQuestion(String question, String[] options) {
         System.out.println(question);
         for (String option : options) {
@@ -94,18 +94,18 @@ public class QuizGame {
         }
     }
 
-    // Function to get the user's answer
+   
     public static String getUserAnswer(Scanner scanner) {
         System.out.print("Enter the option (A, B, C, D): ");
         return scanner.nextLine().toUpperCase();
     }
 
-    // Function to convert the user's answer to a choice index
+   
     public static int getUserChoice(String userAnswer) {
         return userAnswer.charAt(0) - 'A';
     }
 
-    // Function to check if the user's answer is correct and update the score
+   
     public static int checkAnswer(int userChoice, int correctAnswer, String[] options) {
         if (userChoice == correctAnswer) {
             System.out.println("Correct!\n");
@@ -116,7 +116,7 @@ public class QuizGame {
         }
     }
 
-    // Function to display the final score
+    
     public static void displayFinalScore(int score, int totalQuestions) {
         System.out.println("Quiz completed! Your score: " + score + "/" + totalQuestions);
     }
